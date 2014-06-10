@@ -1,0 +1,33 @@
+# Environment Variables
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+export EDITOR="vim"
+
+# Vi Mode
+bindkey -v
+export KEYTIMEOUT=1
+export KEYTIMEOUT=1
+
+# Aliases
+alias mimi='ssh canton14@mimi.cs.mcgill.ca'
+alias ls='ls -G'
+alias lsa='ls -lGa'
+alias f='mdfind'
+alias -s c=vim
+alias -s java=vim
+alias -s md=vim
+alias extempore='cd /usr/local/Cellar/extempore/0.51 && ./extempore'
+
+# Keybindings
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward  
+
+# Automatic cd when just a directory is entered
+setopt AUTO_CD
+
+# Prompt
+PROMPT='%~ -> '
+
+# Plugins
+plugins=()

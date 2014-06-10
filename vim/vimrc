@@ -1,0 +1,62 @@
+"  --- General --- "
+
+"pathogen plugin management"
+execute pathogen#infect()
+
+"use file plugins"
+filetype plugin on
+
+set foldmethod=indent
+
+"make backspace work
+set backspace=indent,eol,start
+
+"auto indentation"
+filetype plugin indent on
+set smartindent
+set tabstop=4
+set shiftwidth=4
+
+"Spell Checking"
+set spell
+
+" --- GUI --- "
+
+"make the 80th column red"
+set cc=80
+
+"line numbers"
+set number
+
+"sytax highlighting"
+syntax on
+
+"enable colour schemes"
+syntax enable
+
+" -- themes -- "
+
+" - solarized dark - "
+
+set background=dark
+colorscheme solarized
+
+" --- filetypes --- "
+
+" -- markdown -- "
+
+"read .txt as txt
+au bufnewfile,bufread *.txt set filetype=txt
+"read .md as txt"
+au bufnewfile,bufread *.md set filetype=txt
+
+" --- keybindings --- "
+
+" command mode
+noremap ; :
+
+" Saving
+noremap <C>s :w<cr>
+
+" --- Plugins --- "
+
